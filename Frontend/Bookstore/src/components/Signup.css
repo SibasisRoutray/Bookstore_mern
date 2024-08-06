@@ -1,0 +1,153 @@
+/* General body styles */
+body {
+  background-color: aliceblue;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for the signup form */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #fffdef, #4877c3);
+  font-family: Arial, sans-serif;
+}
+
+/* Signup form styling */
+.signup-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Form title styling */
+.signup-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+  background-color: whitesmoke;
+}
+
+/* Signup button styling */
+.signup-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .signup-form h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .signup-button {
+    padding: 0.6rem;
+    font-size: 14px;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  .signup-form {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+    margin: 0 10px; /* Add margin to ensure form doesn't touch the screen edges */
+  }
+
+  .signup-form h2 {
+    font-size: 18px; /* Further reduce font size for very small screens */
+  }
+
+  .signup-button {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+}
+
+/* Large devices (large screens, 992px and up) */
+@media (min-width: 992px) {
+  
+  .signup-container {
+    padding-left: 40px; /* Padding from the left on large screens */
+    padding-right: 40px; /* Padding from the right on large screens */
+  }
+  
+  .signup-form {
+    max-width: 600px; /* Width for large screens */
+  }
+
+  .signup-form h2 {
+    font-size: 2rem; /* Larger font size for large screens */
+  }
+
+  .signup-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Extra-large devices (extra-large screens, 1200px and up) */
+@media (min-width: 1200px) {
+  .body{
+    padding-left: 450px;
+  }
+  .signup-container {
+    padding-left: 50px; /* Increased padding from the left on extra-large screens */
+    padding-right: 50px; /* Increased padding from the right on extra-large screens */
+  }
+  
+  .signup-form {
+    max-width: 700px; /* Wider width for extra-large screens */
+  }
+
+  .signup-form h2 {
+    font-size: 2.2rem; /* Larger font size for extra-large screens */
+  }
+
+  .signup-button {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+}

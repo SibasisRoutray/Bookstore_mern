@@ -1,0 +1,78 @@
+/* Global Footer Styles */
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    
+    color: #bac6d1; /* Dark text color for contrast */
+  }
+  
+  .footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .footer-icons {
+    margin-top: 20px;
+  }
+  
+  .footer-icons a {
+    color: #858b91;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #007bff; /* Color on hover */
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    
+    background-color: #e9ecef; /* Slightly different background for bottom section */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer h3 {
+      font-size: 1.5rem;
+    }
+  
+    .footer h5 {
+      font-size: 1rem;
+    }
+  
+    .footer-icons a {
+      font-size: 1.25rem;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer p {
+      font-size: 0.875rem;
+    }
+  
+    .footer-icons a {
+      font-size: 1.1rem;
+      margin-right: 8px;
+    }
+  
+    .footer-bottom {
+      padding: 10px 0;
+    }
+  }
+  
