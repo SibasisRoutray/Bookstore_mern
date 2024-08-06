@@ -2,9 +2,10 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import cors from 'cors'
-
-import bookRoute from '../routes/book.route.js';
-import userRoute from '../routes/user.route.js';
+import process from 'process';
+import bookRoute from '../Backend/routes/book.route.js'
+//import bookRoute from '../routes/book.route.js';
+import userRoute from '../Backend/routes/user.route.js';
 
 const app = express()
  app.use(cors());
@@ -12,11 +13,11 @@ const app = express()
 
 dotenv.config();
 
-const PORT=process.env.PORT || 4002
+const PORT=process.env.REACT_APP_API_PORT || 4002
 
 //mongodb connection
 
-const M_URI=process.env.MONGODB_URI;
+const M_URI=process.env.REACT_APP_API_MONGODB_URL;
 
 try{
   mongoose.connect(M_URI,{
